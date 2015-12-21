@@ -1,2 +1,3 @@
 *.rsa
 /packages
+.ash_history

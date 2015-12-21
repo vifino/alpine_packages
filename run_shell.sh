@@ -20,7 +20,5 @@ apk add alpine-sdk
 chown -R abuilder edge packages
 chown abuilder /repo/adinator1999@gmail.com-5675c1f0.rsa /repo/adinator1999@gmail.com-5675c1f0.rsa.pub
 
-# Run the actual builder script.
-for pkg in edge/*/; do
-	su - abuilder /repo/builder.sh $pkg
-done
+# Switch to builder
+su - abuilder
