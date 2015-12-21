@@ -1,0 +1,24 @@
+# Contributor:
+# Maintainer:
+pkgname=glibc-scripts
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Small wrappers around glibc compat."
+url="none"
+arch="noarch"
+license="MIT"
+depends="glibc glibc-bin"
+depends_dev="glibc glibc-bin"
+makedepends="$depends_dev"
+source="
+	bin/glibc
+	"
+
+package() {
+	install -m755 -D bin/glibc \
+		"$pkgdir"/usr/bin/glibc || return 1
+}
+
+md5sums="02a81eabe037a86d2a4d3d8f3f785182  glibc"
+sha256sums="317a28717c2ffdc25071b792af9e0f287331650925f34b8c260d8dd6a52d6979  glibc"
+sha512sums="709c6f44fdfc4d4a4b5ed4ef300eb402c9806a6503ee1ed37a7202d09b7822a2f6401eee89a4c0ed562585b1ba64ace908634a98e1f633c9bb520145bba26e2f  glibc"

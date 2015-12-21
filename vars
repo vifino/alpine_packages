@@ -1,0 +1,6 @@
+# Variables
+
+# KEYNAME: Set it to your private key.
+KEYNAME=adinator1999@gmail.com-5675c1f0.rsa
+
+export KEYNAME
